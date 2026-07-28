@@ -22,6 +22,7 @@ setwd("~/Library/CloudStorage/OneDrive-UniversityCollegeLondon/R training/Iris")
 #Iris is available in R library 'datasets'
 iris <- iris
 #print(iris)
+write.csv(iris, "Iris.csv")
 ```
 
 ## Task 2 - libraries
@@ -29,8 +30,11 @@ iris <- iris
 library(dplyr)
 ```
 
+## Filter setosa and write csv
 ```{r}
 setosa <- iris %>% filter(Species == "setosa")
-print(setosa)
+#print(setosa)
+
+write.csv(setosa, "Setosa.csv")
 ```
 
