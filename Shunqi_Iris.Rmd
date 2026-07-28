@@ -24,3 +24,13 @@ iris <- iris
 #print(iris)
 ```
 
+## Task 2 - libraries
+```{r}
+library(dplyr)
+```
+
+```{r}
+setosa <- iris %>% filter(Species == "setosa")
+print(setosa)
+```
+
